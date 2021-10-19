@@ -1,0 +1,23 @@
+#+NAME: Auto-Tools Template
+#+AUTHOR: Vijay Gopal Chilkuri
+#+EMAIL: vijay.gopal.c@gmail.com
+#+STARTUP: showeverything
+
+|.........................................................................................|
+|      .          --        ________ ____                          .     _________ ____   |
+|     / \       /              |     |      |\      /| |          / \        |     |      |
+|    /   \     /      ---      |     |      | \    / | |         /   \       |     |      |
+|   /-----\    \               |     |----  |  \  /  | |        /-----\      |     |----  |
+|  /       \    \              |     |      |   \/   | |       /       \     |     |      |
+| /         \    ---           |     |_____ |        | |_____ /         \    |     |_____ |
+|.........................................................................................|
+
+
+* Description
+
+A Template repository for a project based on Autotools.
+
+** Features
+
+Simple demonstration of how to use the different recepies 
+provided by Autotools.
