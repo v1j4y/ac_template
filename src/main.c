@@ -1,5 +1,4 @@
-#include <stdio.h>
-#include <stdlib.h>
+#include "utils.h"
 
 int main(){
   double version = 0.1;
@@ -13,5 +12,12 @@ int main(){
   printf("|  /       \\    \\              |     |      |   \\/   | |       /       \\     |     |      |\n");
   printf("| /         \\    ---           |     |_____ |        | |_____ /         \\    |     |_____ |\n");
   printf("|.........................................................................................|\n");
+
+  printf(" MAT_DIM = %ld\n",(long)MAT_DIM);
+  printf(" MC = %ld\n",(long)MC);
+  printf(" KC = %ld\n",(long)KC);
+  printf(" NC = %ld\n",(long)NC);
+  printf(" MR = %ld\n",(long)MR);
+  printf(" NR = %ld\n",(long)NR);
   return 0;
 }
