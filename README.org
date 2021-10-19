@@ -23,3 +23,14 @@ A Template repository for a project based on Autotools.
 
 Simple demonstration of how to use the different recepies 
 provided by Autotools.
+
+* Navigation
+
+To checkout different features change to the branches which
+implement these features.
+
+* Installation
+
+ - ~autoreconf -i~
+ - ~./configure --prefix=$PWD/$INSTALLDIR~
+ - ~make~
