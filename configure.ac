@@ -18,8 +18,14 @@ AX_LIB_HDF5()
 # Add HDF5 flags
 CXXFLAGS="${HDF5_CFLAGS} ${CXXFLAGS}"
 CFLAGS="${HDF5_CFLAGS} ${CFLAGS}"
+CPPFLAGS="${HDF5_CPPFLAGS} ${CPPFLAGS} -I../include"
 LDFLAGS="${HDF5_LDFLAGS} ${LDFLAGS}"
 LIBS="${HDF5_LIBS} ${LIBS}"
+
+# Add headers
+#CFLAGS="${HDF5_CFLAGS} ${CFLAGS} -I/home/vijay/Documents/codes/autotools_template/tyson/include"
+
+AC_SUBST(CFLAGS)
 
 # Generate Makefile from Makefile.in
 AC_CONFIG_FILES([Makefile src/Makefile])
