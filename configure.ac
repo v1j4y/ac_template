@@ -20,7 +20,7 @@ CXXFLAGS="${HDF5_CFLAGS} ${CXXFLAGS}"
 CFLAGS="${HDF5_CFLAGS} ${CFLAGS}"
 CPPFLAGS="${HDF5_CPPFLAGS} ${CPPFLAGS} -I../include"
 LDFLAGS="${HDF5_LDFLAGS} ${LDFLAGS}"
-LIBS="${HDF5_LIBS} ${LIBS}"
+LIBS="${HDF5_LIBS} ${LIBS} -lhdf5_cpp"
 
 # Add headers
 #CFLAGS="${HDF5_CFLAGS} ${CFLAGS} -I/home/vijay/Documents/codes/autotools_template/tyson/include"
