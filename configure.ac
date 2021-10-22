@@ -12,6 +12,15 @@ AC_PROG_FC([gfortran])
 # Make sure gcc is working
 AC_PROG_CC([gcc])
 
+# Detect HDF5
+AX_LIB_HDF5()
+
+# Add HDF5 flags
+CXXFLAGS="${HDF5_CFLAGS} ${CXXFLAGS}"
+CFLAGS="${HDF5_CFLAGS} ${CFLAGS}"
+LDFLAGS="${HDF5_LDFLAGS} ${LDFLAGS}"
+LIBS="${HDF5_LIBS} ${LIBS}"
+
 # Generate Makefile from Makefile.in
 AC_CONFIG_FILES([Makefile src/Makefile])
 
