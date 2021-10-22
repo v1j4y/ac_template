@@ -26,3 +26,28 @@ AC_CONFIG_FILES([Makefile src/Makefile])
 
 # Done
 AC_OUTPUT
+
+echo \
+"-------------------------------------------------
+
+${PACKAGE_NAME} Version ${PACKAGE_VERSION} ${TREXIO_DEVEL}
+
+Prefix ........:  ${prefix}
+CC ............:  ${CC}
+CPPFLAGS ......:  ${CPPFLAGS}
+CFLAGS ........:  ${CFLAGS}
+FC ............:  ${FC}
+FCLAGS ........:  ${FCFLAGS}
+LDFLAGS .......:  ${LDFLAGS}
+LIBS ..........:  ${LIBS}
+
+Package features:
+  Compilation with HDF5 ..:  ${with_hdf5}
+  HDF5 version ...........:  ${HDF5_VERSION}
+
+Now type 'make @<:@<target>@:>@'
+where the optional <target> is:
+  all           - build C library and Fortran binding
+  check	        - run unit tests
+  install       - install the library 
+--------------------------------------------------"
