@@ -1,4 +1,4 @@
-#include "utils.h"
+#include "main.h"
 
 int main(){
   double version = 0.1;
@@ -12,5 +12,11 @@ int main(){
   printf("|  /       \\    \\              |     |      |   \\/   | |       /       \\     |     |      |\n");
   printf("| /         \\    ---           |     |_____ |        | |_____ /         \\    |     |_____ |\n");
   printf("|.........................................................................................|\n");
+
+  int numbers[2];
+  int res = 0;
+  res = read_dims(&numbers[0]);
+  printf(" 1 - %d\n",numbers[0]);
+  printf(" 2 - %d\n",numbers[1]);
   return 0;
 }

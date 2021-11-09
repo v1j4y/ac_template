@@ -1,10 +1,13 @@
 # Initialize
 AC_INIT([tyson], [0.1])
+AM_PROG_AR
 LT_INIT
 AC_CONFIG_MACRO_DIR([m4])
 
 # Generate the Makefile
 AM_INIT_AUTOMAKE([foreign -Wall -Werror])
+
+AC_LANG(C)
 
 # Make sure Fortran is available
 AC_PROG_FC([gfortran])
@@ -28,7 +31,7 @@ LIBS="${HDF5_LIBS} ${LIBS} -lhdf5_cpp"
 AC_SUBST(CFLAGS)
 
 # Generate Makefile from Makefile.in
-AC_CONFIG_FILES([Makefile src/Makefile])
+AC_CONFIG_FILES([Makefile])
 
 # Done
 AC_OUTPUT
